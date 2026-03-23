@@ -1,0 +1,98 @@
+{
+  "defaultAction": "SCMP_ACT_ERRNO",
+  "architectures": ["SCMP_ARCH_X86_64", "SCMP_ARCH_X86", "SCMP_ARCH_AARCH64"],
+  "syscalls": [
+    {
+      "names": ["read", "write", "open", "openat", "close", "lseek", "pread64", "pwrite64"],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": ["stat", "fstat", "lstat", "newfstatat", "statx"],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": ["mmap", "mprotect", "munmap", "brk", "mremap"],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": [
+        "clone",
+        "clone3",
+        "execve",
+        "exit",
+        "exit_group",
+        "wait4",
+        "getpid",
+        "getuid",
+        "getgid",
+        "gettid",
+        "getppid",
+        "geteuid",
+        "getegid"
+      ],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": ["rt_sigaction", "rt_sigprocmask", "rt_sigreturn"],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": ["epoll_create1", "epoll_ctl", "epoll_wait", "epoll_pwait"],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": [
+        "pipe",
+        "pipe2",
+        "socket",
+        "connect",
+        "sendto",
+        "recvfrom",
+        "bind",
+        "listen",
+        "accept4"
+      ],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": [
+        "ioctl",
+        "access",
+        "faccessat",
+        "faccessat2",
+        "select",
+        "pselect6",
+        "sched_yield",
+        "futex",
+        "clock_gettime",
+        "clock_getres",
+        "nanosleep",
+        "getrandom",
+        "fcntl",
+        "dup",
+        "dup2",
+        "dup3",
+        "getcwd",
+        "readlink",
+        "readlinkat",
+        "getdents64",
+        "set_tid_address",
+        "set_robust_list",
+        "prlimit64",
+        "arch_prctl",
+        "sched_getaffinity",
+        "eventfd2",
+        "timerfd_create",
+        "timerfd_settime",
+        "signalfd4",
+        "prctl",
+        "madvise",
+        "sysinfo",
+        "uname",
+        "umask",
+        "tgkill"
+      ],
+      "action": "SCMP_ACT_ALLOW"
+    }
+  ]
+}

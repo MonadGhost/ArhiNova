@@ -1,0 +1,12 @@
+{
+  "name": "@openclaw/searxng-plugin",
+  "version": "2026.3.17",
+  "private": true,
+  "description": "OpenClaw SearXNG self-hosted web search plugin",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
