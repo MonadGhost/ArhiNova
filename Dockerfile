@@ -118,9 +118,9 @@ ARG OPENCLAW_VARIANT
 # If you change these annotations, also update:
 # - docs/install/docker.md ("Base image metadata" section)
 # - https://docs.openclaw.ai/install/docker
-LABEL org.opencontainers.image.source="https://github.com/openclaw/openclaw" \
-  org.opencontainers.image.url="https://openclaw.ai" \
-  org.opencontainers.image.documentation="https://docs.openclaw.ai/install/docker" \
+LABEL org.opencontainers.image.source="https://github.com/MonadGhost/ArhiNova" \
+  org.opencontainers.image.url="https://github.com/MonadGhost/ArhiNova" \
+  org.opencontainers.image.documentation="https://github.com/MonadGhost/ArhiNova#readme" \
   org.opencontainers.image.licenses="MIT" \
   org.opencontainers.image.title="OpenClaw" \
   org.opencontainers.image.description="OpenClaw gateway and CLI runtime container image"
